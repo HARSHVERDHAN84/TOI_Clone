@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>News-Latest News, Breaking</title>
+  <link rel="icon" href="/assets/images/favicon-img.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha384-fNEy1ALFvnjWnX78jN3e63uHpp2LKz6Ilr7YOsmXa6m1Ogi1ekDf5cuwF3gHlO4M" crossorigin="anonymous">
+</head>
+
+<body class="mx-[130px] font-[verdana]">
+  <div class="flex justify-between border-b-[1px] text-link-hover-color text-[10px]">
+    <div class=" py-2 font-medium flex" id="editionInfo">
+      <div class="flex gap-x-2 border-r-[1px] pr-2">
+        <span>EDITION</span>
+        <div class="flex gap-x-1">
+          <img src="/assets/images/flag-img.jpeg" alt="flag-img" height="12px" width="12px">
+          <span>IN</span>
+        </div>
+      </div>
+      <div class="px-2 border-r-[1px]">WED, MAR 06, 2024 | UPDATED 05.22PM IST</div>
+      <div id="weatherInfo" class="px-2 border-r-[1px]">
+        <!-- Weather data will be appended here -->
+      </div>
+    </div>
+    <div class="flex gap-2 justify-center items-center">
+      <div class="py-2">
+        <a href="#"
+          class="p-1 text-center text-red-600 leading-[12px] font-bold border-red-600 rounded-md border-[1px]">Read
+          ePaper</a>
+      </div>
+      <div class="py-2">
+        <a href="#"
+          class="p-1 text-center bg-red-600 text-white leading-[12px] font-bold border-red-600 rounded-md border-[1px]">SUBSCRIBE
+          TO TOI+</a>
+      </div>
+      <div class="py-2">
+        <a href="#" class="p-1 text-center text-[13px] leading-[12px] ">SIGN IN</a>
+      </div>
+      <ul class="flex justify-around">
+        <li>
+          <i class="fa-brands fa-facebook"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-twitter"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-youtube"></i>
+        </li>
+        <li>
+          <i class="fa-brands fa-instagram"></i>
+        </li>
+
+        <li>
+          <i class="fa-brands fa-linkedin"></i>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+  <header class="cursor-pointer">
+    <img src="/assets/images/header-img.cms" alt="header-img">
+  </header>
+
+  <script type="module" src="/src/main.jsx"></script>
+
+  <div class="flex gap-4 justify-center items-center bg-bg-nav-bar-color py-2 border-t-[1px] border-b-2 border-b-black">
+    <div>
+      <a href="">TOI+</a>
+    </div>
+    <nav>
+      <ul class="flex text-[12px] leading-4 text-primary-color">
+        <!-- Dynamically links append here  -->
+      </ul>
+    </nav>
+
+    <!-- <div class="search-bar flex">
+      <input type="text" class="news-input" placeholder="filter" id="searchInput">
+      <button class="search-button" onclick="search()">Search</button>
+  </div> -->
+  </div>
+
+  <div class="mt-2 border-b-[1px] pb-2">
+    <ul class="flex text-[12px] justify-start gap-7 leading-4 text-primary-color">
+      <li class="text-red-color-text font-bold">IN THE NEWS</li>
+      <li class="hover:text-link-hover-color cursor-pointer">SPEAKING</li>
+      <li class="hover:text-link-hover-color cursor-pointer">WOMEN'S</li>
+      <li class="hover:text-link-hover-color cursor-pointer">IPL SCHEDULE</li>
+      <li class="hover:text-link-hover-color cursor-pointer">CSBE EXAM DATE SHEET</li>
+      <li class="hover:text-link-hover-color cursor-pointer">WPL SCHEDULE</li>
+      <li class="hover:text-link-hover-color cursor-pointer">B-SCHOOL BLACKSTAGE</li>
+    </ul>
+  </div>
+
+  <div class="flex mt-12" id="container">
+    <div class="w-1/2 border-r-[1px]  border-dotted  pr-6">
+      <!-- Carousel -->
+      <div class="w-full carousel-container border-2 rounded-lg  overflow-hidden cursor-pointer">
+        <!-- Carousel items will be inserted here -->
+      </div>
+
+      <!-- Grid layout -->
+      <div class="grid grid-cols-2 overflow-hidden gap-8" id="gridLayout">
+        <!-- News updates will come here -->
+      </div>
+    </div>
+    <div class="w-1/5 border-r-[1px] justify-center px-6" id="middleContent"></div>
+    <div class="w-1/3 pl-[25px]" id="rightContent">
+
+      <div class="pl-4 pb-4">
+        <div class="text-center pr-2 text-link-hover-color">
+          <a href="#" class="text-[10px] font-normal">ADVERTISEMENT</a>
+        </div>
+        <img src="https://tpc.googlesyndication.com/simgad/1938999038090054734?">
+      </div>
+      <div class="bg-bg-pink-color rounded-lg">
+        <div class="flex justify-between pt-3">
+          <a href="#" class="font-[georgia] text-[28px] pl-3 ">TOI+</a>
+
+          <div class="pt-2 pr-3">
+            <a href="#"
+              class="text-[10px] text-red-600 py-1 px-2 border-[1px] border-red-600 rounded-[4px] font-bold">SUBSCRIBE</a>
+          </div>
+        </div>
+        <div class="flex flex-col justify-center gap-2">
+          <a href="#" class="text-[12px] leading-4 font-bold underline pl-4">Todey's ePaper
+          </a>
+          <a href="#" class="flex justify-center">
+            <div class="text-center relative h-32 w-64 overflow-hidden">
+              <img
+                src="https://static.toiimg.com/thumb/imgsize-4617206,msid-108280844,width-250,resizemode-4/108280844.jpg"
+                msid="108280844" imgsize="4617206" resizemode="4" title="" offsetvertical="0" placeholdersrc=""
+                placeholdermsid="" type="thumb" alt="" class="absolute top-0 w-full h-full aspect-video">
+            </div>
+          </a>
+          <div class="pb-2">
+            <a href="" class="underline text-[12px] leading-4 font-bold pl-4">Exclusive Stories</a>
+            <div class="pl-8">
+              <ul class="list-disc text-[13px] leading-[18px] font-medium text-primary-color flex flex-col gap-2">
+                <li>Can a new law protect NRI wives from fraud, domestic abuse?</li>
+                <li>After her son’s death she thought life was over, and then...</li>
+                <li>How Ram Vilas Paswan’s blind love for son wrecked his party</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <template id="carousel-item-template">
+    <div class="carousel-item hidden relative">
+      <img class="carousel-img hover:scale-105 hover:animate-zoom block w-full h-auto aspect-video object-cover" alt="">
+      <div class="bottom-left absolute left-4 bottom-2 text-white text-[28px] leading-8 font-bold font-[georgia]"></div>
+    </div>
+  </template>
+
+  <template id="template-news-card">
+    <div class="card flex cursor-pointer border-b-[1px] border-dotted py-3">
+      <div class="news-details">
+        <h3 id="news-title" class="text-[13px] leading-[18px]"></h3>
+      </div>
+      <img id="news-img"
+        class="w-[80px] h-[45px] aspect-video border-[1px] rounded-md object-cover hover:scale-105 hover:animate-zoom"
+        alt="">
+
+    </div>
+  </template>
+
+  <template id="middleContent-template">
+    <div id="middleContentBlock" class="cursor-pointer mb-4">
+      <img alt="" id="middleContentImg"
+        class="w-[180px] h-[110px] aspect-video border-[1px] rounded-md object-cover hover:scale-105 hover:animate-zoom">
+      <p id="middleContentText" class="text-[13px] font-medium leading-[18px]"></p>
+    </div>
+  </template>
+
+  <script>
+    const linkTexts1 = ['Videos', 'City', 'India', 'World', 'Business', 'Tech', 'Cricket', 'Sports', 'Entertainment', 'Auto', 'TV', 'Web Series', 'Life Style', 'Education', 'Photos', 'Blogs'];
+
+    const linkTexts2 = ['IN THE NEWS', 'SPEAKING', 'WOMEN\S', 'IPL SCHEDULE', 'CSBE EXAM DATE SHEET', 'WPL SCHEDULE', 'B-SCHOOL BLACKSTAGE'];
+
+    function createLinks(linkTexts) {
+
+      const ulElement = document.querySelector('div nav ul');
+
+      linkTexts.forEach(text => {
+        const liElement = document.createElement('li');
+        const aElement = document.createElement('a');
+        aElement.href = '#';
+        aElement.textContent = text;
+        aElement.style.padding = '10px';
+
+        // Add hover color change functionality
+        liElement.addEventListener('mouseover', () => {
+          liElement.style.color = '#595959'; // Change color on hover
+        });
+        liElement.addEventListener('mouseout', () => {
+          liElement.style.color = ''; // Revert back to original color
+        });
+        liElement.appendChild(aElement);
+        ulElement.appendChild(liElement);
+      });
+    }
+    createLinks(linkTexts1);
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
